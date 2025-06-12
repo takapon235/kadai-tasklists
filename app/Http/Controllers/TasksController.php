@@ -102,7 +102,7 @@ class TasksController extends Controller
     {
         $task = Task::findOrFail($id);
 
-        $task = delete();
+        $task->delete();
 
         return redirect('/');
     }

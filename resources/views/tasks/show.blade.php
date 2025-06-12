@@ -14,7 +14,7 @@
 
         <tr>
             <th>タイトル</th>
-            <td>{{ $message->status }}</td>
+            <td>{{ $task->status }}</td>
         </tr>
 
         <tr>
