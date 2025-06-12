@@ -13,6 +13,11 @@
         </tr>
 
         <tr>
+            <th>タイトル</th>
+            <td>{{ $message->status }}</td>
+        </tr>
+
+        <tr>
             <th>メッセージ</th>
             <td>{{ $task->content }}</td>
         </tr>
