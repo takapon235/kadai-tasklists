@@ -28,7 +28,7 @@ Route::get('/', [TasksController::class, 'index']);
 Route::get('/dashboard', [TasksController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::resource('users', UsersController::class, ['only' => ['index', 'show']]);    
+    // Route::resource('users', UsersController::class, ['only' => ['index', 'show']]);    
     Route::resource('tasks', TasksController::class);
     // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
